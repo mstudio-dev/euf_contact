@@ -1,7 +1,7 @@
 {
   "name": "erdmannfreunde/euf_contact",
   "description": "Contao Extension for a Contact Content Element",
-  "keywords": ["contao", "contact", "", "euf contact"],
+  "keywords": ["contao", "contact", "euf contact"],
   "type": "contao-module",
   "homepage": "https://github.com/ErdmannFreunde/euf_contact",
   "license": "GPL-3.0+",
