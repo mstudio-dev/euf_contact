@@ -1,7 +1,7 @@
 <?php
 
 /**
- * * This file is part of ErdmannFreunde/admanager.
+ * * This file is part of ErdmannFreunde/euf_contact.
  *
  * (c) 2018 Erdmann & Freunde.
  *

@@ -1,32 +1,40 @@
 {
   "name": "erdmannfreunde/euf_contact",
   "description": "Contao Extension for a Contact Content Element",
-  "keywords": ["contao", "contact", "euf contact"],
+  "keywords": [
+    "contao",
+    "contact",
+    "euf contact"
+  ],
   "type": "contao-module",
   "homepage": "https://github.com/ErdmannFreunde/euf_contact",
   "license": "GPL-3.0+",
-	"authors":[
-		{
-			"name":"Erdmann & Freunde - Dennis Erdmann",
-			"homepage":"https://erdmann-freunde.de",
-			"role":"Developer"
-		}
-	],
-	"support":{
-		"email": "moin@erdmann-freunde.de",
-		"issues":"https://github.com/ErdmannFreunde/euf_contact/issues",
-		"source":"https://github.com/ErdmannFreunde/euf_contact"
-	},
-	"require": {
-		"php": "^7.1",
-		"contao/core-bundle": "~4.1"
-	},
-	"autoload": {
-		"psr-4": {
-			"ErdmannFreunde\\ContaoContactBundle\\": "src/"
-		}
-	},
-	"extra": {
-		"contao-manager-plugin": "ErdmannFreunde\\ContaoContactBundle\\ContaoManager\\Plugin"
-	}
+  "authors": [
+    {
+      "name": "Erdmann & Freunde - Dennis Erdmann",
+      "homepage": "https://erdmann-freunde.de",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "moin@erdmann-freunde.de",
+    "issues": "https://github.com/ErdmannFreunde/euf_contact/issues",
+    "source": "https://github.com/ErdmannFreunde/euf_contact"
+  },
+  "require": {
+    "php": "^7.1",
+    "contao/core-bundle": "~4.1",
+    "symfony/http-kernel": "^3.3 || ^4.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ErdmannFreunde\\ContaoContactBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "ErdmannFreunde\\ContaoContactBundle\\ContaoManager\\Plugin"
+  }
 }

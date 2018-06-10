@@ -1,23 +1,23 @@
 <?php
 
 /**
- * Contao Open Source CMS
+ * * This file is part of ErdmannFreunde/euf_contact.
  *
- * Copyright (c) 2005-2016 Leo Feyer
+ * (c) 2018 Erdmann & Freunde.
  *
- * @package   euf_contact
- * @author    Dennis Erdmann
- * @license   LGPL
- * @copyright Erdmann & Freunde
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @package    euf_contact
+ * @author     Dennis Erdmann
+ * @copyright  2018 Erdmann & Freunde
+ * @license    LICENSE LGPL-3.0
+ * @filesource
  */
 
 
-/**
- * Label
- */
-
-$GLOBALS['TL_LANG']['tl_content']['contact_name'] = array('Name','Vor- und Nachname');
-$GLOBALS['TL_LANG']['tl_content']['contact_position'] = array('Position','Position/Jobbeschreibung etc.');
-$GLOBALS['TL_LANG']['tl_content']['contact_email'] = array('E-Mail','E-Mail Adresse');
-$GLOBALS['TL_LANG']['tl_content']['contact_description'] = array('Beschreibung','2-3 Sätze über die Person.');
-$GLOBALS['TL_LANG']['tl_content']['addContactImage'] = array('Bilder hinzufügen','Dem Inhaltselement ein Bild hinzufügen.');
+$GLOBALS['TL_LANG']['tl_content']['contact_name']        = ['Name', 'Vor- und Nachname'];
+$GLOBALS['TL_LANG']['tl_content']['contact_position']    = ['Position', 'Position/Jobbeschreibung etc.'];
+$GLOBALS['TL_LANG']['tl_content']['contact_email']       = ['E-Mail', 'E-Mail Adresse'];
+$GLOBALS['TL_LANG']['tl_content']['contact_description'] = ['Beschreibung', '2-3 Sätze über die Person.'];
+$GLOBALS['TL_LANG']['tl_content']['addContactImage']     = ['Bilder hinzufügen', 'Dem Inhaltselement ein Bild hinzufügen.'];
