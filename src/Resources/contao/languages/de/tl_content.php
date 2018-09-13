@@ -20,3 +20,4 @@ $GLOBALS['TL_LANG']['tl_content']['contact_name']        = ['Name', 'Vor- und Na
 $GLOBALS['TL_LANG']['tl_content']['contact_position']    = ['Position', 'Position/Jobbeschreibung etc.'];
 $GLOBALS['TL_LANG']['tl_content']['contact_email']       = ['E-Mail', 'E-Mail Adresse'];
 $GLOBALS['TL_LANG']['tl_content']['contact_description'] = ['Beschreibung', '2-3 Sätze über die Person.'];
+$GLOBALS['TL_LANG']['tl_content']['addContactImage']     = ['Bilder hinzufügen', 'Dem Inhaltselement ein Bild hinzufügen.'];

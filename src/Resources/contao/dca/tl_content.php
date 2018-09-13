@@ -19,14 +19,23 @@
 /*
  * Palettes
  */
+
+$GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addContactImage';
+
 $GLOBALS['TL_DCA']['tl_content']['palettes']['contact'] =
     '{type_legend},type,headline;'
     . '{text_legend},contact_name,contact_position,contact_email,contact_description;'
-    . '{image_legend},addImage;'
+    . '{image_legend},addContactImage;'
     . '{template_legend:hide},customTpl;'
     . '{protected_legend:hide},protected;'
     . '{expert_legend:hide},guests,cssID,space;'
     . '{invisible_legend:hide},invisible,start,stop';
+
+
+/*
+ * Subpalettes
+ */
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addContactImage'] = 'singleSRC,size,overwriteMeta';
 
 
 /*
