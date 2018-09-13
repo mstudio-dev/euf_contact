@@ -50,10 +50,10 @@ class Contact extends ContentElement
         }
 
         $this->Template->text     = StringUtil::encodeEmail($this->text);
-        $this->Template->addImage = false;
+        $this->Template->addContactImage = false;
 
         // Add an image
-        if ($this->addImage && $this->singleSRC) {
+        if ($this->addContactImage && $this->singleSRC) {
             $objModel = FilesModel::findByUuid($this->singleSRC);
 
             if ($objModel !== null && is_file(TL_ROOT . '/' . $objModel->path)) {
