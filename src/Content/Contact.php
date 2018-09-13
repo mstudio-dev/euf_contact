@@ -60,6 +60,8 @@ class Contact extends ContentElement
                 $this->singleSRC = $objModel->path;
                 static::addImageToTemplate($this->Template, $this->arrData);
             }
+            
+            $this->Template->addContactImage = true;
         }
     }
 }
