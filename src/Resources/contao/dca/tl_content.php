@@ -97,3 +97,13 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['contact_description'] = [
     ],
     'sql'       => 'mediumtext NULL'
 ];
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['addContactImage'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['addContactImage'],
+    'exclude'   => true,
+    'inputType' => 'checkbox',
+    'eval'      => [
+        'submitOnChange' => true
+    ],
+    'sql'       => "char(1) NOT NULL default ''"
+];
