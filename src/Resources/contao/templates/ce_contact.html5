@@ -25,6 +25,12 @@
       <p class="contact__name">
         <?= $this->contact_name ?>
       </p>
+	  
+      <?php if($this->contact_position): ?>
+	      <div class="contact__position">
+	        <?= $this->contact_position ?>
+	      </div>
+      <?php endif; ?>
       
       <?php if($this->contact_description): ?>
 	      <div class="contact__description">
@@ -34,11 +40,10 @@
       
       <?php if($this->contact_email): ?>
 	      <div class="contact__email">
-	        <a href="<?= $this->contact_email ?>" title="<?= $this->contact_name ?>">E-Mail</a>
+	        <a href="<?= $this->contact_email_link ?>" title="<?= $this->contact_name ?>">E-Mail</a>
 	      </div>
       <?php endif; ?>
     </div>
   </div>
-
 
 </div>
