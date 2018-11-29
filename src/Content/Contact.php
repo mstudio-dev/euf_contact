@@ -63,5 +63,11 @@ class Contact extends ContentElement
             
             $this->Template->addContactImage = true;
         }
+		
+		// Encode contact email
+		$this->Template->contact_email     = StringUtil::encodeEmail($this->contact_email);
+		
+		// Add contact email link
+		$this->Template->contact_email_link = '&#109;&#97;&#105;&#108;&#116;&#111;&#58;' . StringUtil::encodeEmail($this->contact_email);
     }
 }
