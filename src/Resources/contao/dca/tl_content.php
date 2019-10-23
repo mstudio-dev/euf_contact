@@ -35,7 +35,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['contact'] =
 /*
  * Subpalettes
  */
-$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addContactImage'] = 'singleSRC,size';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addContactImage'] = 'singleSRC,size,alt,imageTitle,caption';
 
 
 /*
