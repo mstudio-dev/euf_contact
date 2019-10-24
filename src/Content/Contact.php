@@ -58,15 +58,16 @@ class Contact extends ContentElement
 
             if ($objModel !== null && is_file(TL_ROOT . '/' . $objModel->path)) {
                 $this->singleSRC = $objModel->path;
-                static::addImageToTemplate($this->Template, $this->arrData);
+                $this->overwriteMeta = ($this->alt || $this->imageTitle || $this->caption);
+                $this->addImageToTemplate($this->Template, $this->arrData, null, null, $objModel);
             }
-            
+
             $this->Template->addContactImage = true;
         }
-		
+
 		// Encode contact email
 		$this->Template->contact_email     = StringUtil::encodeEmail($this->contact_email);
-		
+
 		// Add contact email link
 		$this->Template->contact_email_link = '&#109;&#97;&#105;&#108;&#116;&#111;&#58;' . StringUtil::encodeEmail($this->contact_email);
     }
