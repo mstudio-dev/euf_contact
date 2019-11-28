@@ -22,7 +22,7 @@
     "source": "https://github.com/ErdmannFreunde/euf_contact"
   },
   "require": {
-    "php": "^7.1",
+    "php": ">=5.6",
     "contao/core-bundle": "~4.1",
     "symfony/http-kernel": "^3.3 || ^4.0"
   },
