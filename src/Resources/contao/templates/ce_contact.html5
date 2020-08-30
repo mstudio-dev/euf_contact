@@ -40,13 +40,13 @@
       
       <?php if($this->contact_phone): ?>
 	      <div class="contact__phone">
-	        <?= $this->contact__phone ?>
+	        <?= $this->contact_phone ?>
 	      </div>
       <?php endif; ?>
       
       <?php if($this->contact_fax): ?>
 	      <div class="contact__fax">
-	        <?= $this->contact__fax ?>
+	        <?= $this->contact_fax ?>
 	      </div>
       <?php endif; ?>
       
