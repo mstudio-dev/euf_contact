@@ -88,8 +88,8 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['contact_phone'] = [
 ];
 
 // Fax
-$GLOBALS['TL_DCA']['tl_content']['fields']['contact_phone'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_phone'],
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_fax'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_fax'],
     'exclude'   => true,
     'search'    => true,
     'inputType' => 'text',
