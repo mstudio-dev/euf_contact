@@ -38,6 +38,18 @@
 	      </div>
       <?php endif; ?>
       
+      <?php if($this->contact_phone): ?>
+	      <div class="contact__phone">
+	        <?= $this->contact__phone ?>
+	      </div>
+      <?php endif; ?>
+      
+      <?php if($this->contact_fax): ?>
+	      <div class="contact__fax">
+	        <?= $this->contact__fax ?>
+	      </div>
+      <?php endif; ?>
+      
       <?php if($this->contact_email): ?>
 	      <div class="contact__email">
 	        <a href="<?= $this->contact_email_link ?>" title="<?= $this->contact_name ?>">E-Mail</a>
