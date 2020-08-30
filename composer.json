@@ -6,6 +6,7 @@
     "contact",
     "euf contact"
   ],
+  "version": "1.0.0",
   "type": "contao-module",
   "homepage": "https://github.com/ErdmannFreunde/euf_contact",
   "license": "GPL-3.0+",
