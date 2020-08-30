@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addContactImag
 
 $GLOBALS['TL_DCA']['tl_content']['palettes']['contact'] =
     '{type_legend},type,headline;'
-    . '{text_legend},contact_name,contact_position,contact_email,contact_description;'
+    . '{text_legend},contact_name,contact_position,contact_phone,contact_fax,contact_email,contact_description;'
     . '{image_legend},addContactImage;'
     . '{template_legend:hide},customTpl;'
     . '{protected_legend:hide},protected;'
@@ -71,7 +71,39 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['contact_position'] = [
     'sql'       => "varchar(255) NOT NULL default ''"
 ];
 
-// position
+
+// Phone
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_phone'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_phone'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'rgxp'           => 'phone',
+        'decodeEntities' => true,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+// Fax
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_phone'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_phone'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'rgxp'           => 'phone',
+        'decodeEntities' => true,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+
+// E-Mail
 $GLOBALS['TL_DCA']['tl_content']['fields']['contact_email'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_email'],
     'exclude'   => true,
