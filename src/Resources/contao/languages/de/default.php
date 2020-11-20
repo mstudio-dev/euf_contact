@@ -19,4 +19,4 @@
 /**
  * Elemente
  */
-$GLOBALS['TL_LANG']['CTE']['contact'][0] = 'Kontakt';
+$GLOBALS['TL_LANG']['CTE']['contact'][0] = 'Visitenkarte';

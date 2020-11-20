@@ -140,3 +140,61 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['addContactImage'] = [
     ],
     'sql'       => "char(1) NOT NULL default ''"
 ];
+
+// Phone
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_phone'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_phone'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'rgxp'           => 'phone',
+        'decodeEntities' => true,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+// Fax
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_fax'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_fax'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'rgxp'           => 'phone',
+        'decodeEntities' => true,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+// Web
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_web'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_web'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'rgxp'           => 'url',
+        'decodeEntities' => true,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+// Web-Link
+$GLOBALS['TL_DCA']['tl_content']['fields']['contact_web_linktext'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_content']['contact_web_linktext'],
+    'exclude'   => true,
+    'search'    => true,
+    'inputType' => 'text',
+    'eval'      => [
+        'maxlength'      => 255,
+        'tl_class'       => 'w50'
+    ],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];

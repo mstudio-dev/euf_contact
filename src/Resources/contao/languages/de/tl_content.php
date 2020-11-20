@@ -21,5 +21,10 @@ $GLOBALS['TL_LANG']['tl_content']['contact_position']    = ['Position', 'Positio
 $GLOBALS['TL_LANG']['tl_content']['contact_phone']       = ['Telefonnummer', 'Telefonnummer'];
 $GLOBALS['TL_LANG']['tl_content']['contact_fax']         = ['Faxnummer', 'Faxnummer'];
 $GLOBALS['TL_LANG']['tl_content']['contact_email']       = ['E-Mail', 'E-Mail Adresse'];
-$GLOBALS['TL_LANG']['tl_content']['contact_description'] = ['Beschreibung', '2-3 Sätze über die Person.'];
+$GLOBALS['TL_LANG']['tl_content']['contact_description'] = ['Anschrift / Beschreibung', '2-3 Sätze über die Person.'];
 $GLOBALS['TL_LANG']['tl_content']['addContactImage']     = ['Bild hinzufügen', 'Dem Inhaltselement ein Bild hinzufügen.'];
+$GLOBALS['TL_LANG']['tl_content']['contact_phone'] = array('Telefonnummer','Bitte geben Sie die Telefonnummer ein');
+$GLOBALS['TL_LANG']['tl_content']['contact_fax'] = array('Faxnummer','Bitte geben Sie die Faxnummer ein');
+$GLOBALS['TL_LANG']['tl_content']['contact_web'] = array('Web-Adresse','Bitte geben Sie die Web-Adresse mit https:// ein');
+$GLOBALS['TL_LANG']['tl_content']['contact_web_linktext'] = array('Linktext','Bitte geben Sie einen passenden Linktext ein');
+

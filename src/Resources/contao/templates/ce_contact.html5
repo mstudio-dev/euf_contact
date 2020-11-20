@@ -1,6 +1,12 @@
-<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
-
-  <?php if ($this->addContactImage): ?>
+<?php $this->block('title') ?>
+        <?php if ($this->headline): ?>
+        <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+        <?php endif; ?>
+        <?php $this->endblock() ?>
+<div class="card <?= $this->class ?> block shadow wow fadeIn" data-wow-duration="2s"<?= $this->cssID ?> style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <?php if ($this->addContactImage): ?>
     <figure class="image_container<?= $this->floatClass ?>"<?php if ($this->margin): ?> style="<?= $this->margin ?>"<?php endif; ?>>
 
       <?php if ($this->href): ?>
@@ -19,43 +25,52 @@
 
     </figure>
   <?php endif; ?>
-
-  <div class="text_container">
-    <div class="inside">
-      <p class="contact__name">
-        <?= $this->contact_name ?>
-      </p>
-	  
-      <?php if($this->contact_position): ?>
-	      <div class="contact__position">
-	        <?= $this->contact_position ?>
-	      </div>
-      <?php endif; ?>
-      
-      <?php if($this->contact_description): ?>
-	      <div class="contact__description">
-	        <?= $this->contact_description ?>
-	      </div>
-      <?php endif; ?>
-      
-      <?php if($this->contact_phone): ?>
-	      <div class="contact__phone">
-	        <?= $this->contact_phone ?>
-	      </div>
-      <?php endif; ?>
-      
-      <?php if($this->contact_fax): ?>
-	      <div class="contact__fax">
-	        <?= $this->contact_fax ?>
-	      </div>
-      <?php endif; ?>
-      
-      <?php if($this->contact_email): ?>
-	      <div class="contact__email">
-	        <a href="<?= $this->contact_email_link ?>" title="<?= $this->contact_name ?>">E-Mail</a>
-	      </div>
-      <?php endif; ?>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+        	<span class="contact_name"><?= $this->contact_name ?></span>
+        	<?php if($this->contact_position): ?>
+        	<small class="contact_position text-muted">
+        	<?= $this->contact_position ?>
+        	</small>
+    		<?php endif; ?>
+    	</h5>
+    	<?php if($this->contact_description): ?>
+        <div class="card-text">
+        	<?= $this->contact_description ?>
+        </div>
+        <?php endif; ?>
+        <ul class="card-text fa-ul">
+        	<?php if($this->contact_phone): ?>
+        	<li><span class="fa-li"><i class="fa fa-phone-square"></i></span>
+        		<?= $this->contact_phone ?>
+        	</li>
+        	<?php endif; ?>
+        	<?php if($this->contact_fax): ?>
+        	<li><span class="fa-li"><i class="fa fa-fax"></i></span>
+        		<?= $this->contact_fax ?>
+        	</li>
+        	<?php endif; ?>
+        	<?php if($this->contact_email): ?>
+        	<li><span class="fa-li"><i class="fa fa-envelope"></i></span>
+        		<a href="<?= $this->contact_email_link ?>" title="<?= $this->contact_name ?>"><?= $this->contact_email ?></a>
+        	</li>
+    		<?php endif; ?>
+    		<?php if($this->contact_web): ?>
+        	<li><span class="fa-li"><i class="fa fa-globe"></i></span>
+        		<a href="<?= $this->contact_web ?>" title="<?= $this->contact_web ?>">
+        		<?php if ($this->contact_web_linktext) {
+        			echo $this->contact_web_linktext;
+        		}else{
+        			echo $this->contact_web;
+        		}
+        		?>
+        		</a>
+        	</li>
+    		<?php endif; ?>
+        </ul>
+      </div>
     </div>
   </div>
-
 </div>
